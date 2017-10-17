@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upanglogo" translatesAutoresizingMaskIntoConstraints="NO" id="XQs-Re-khl">
+                                <rect key="frame" x="120" y="468" width="80" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="0wE-5O-Qa6"/>
+                                    <constraint firstAttribute="width" constant="80" id="B7F-7C-yRo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAILY WORKOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="19W-Ud-RVS">
+                                <rect key="frame" x="40" y="254" width="240" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="12f-j1-lEl"/>
+                                    <constraint firstAttribute="height" constant="60" id="dp0-hJ-ilc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_default" translatesAutoresizingMaskIntoConstraints="NO" id="2Dx-DM-5yy">
+                                <rect key="frame" x="36" y="133" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="08T-6h-vzg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="19W-Ud-RVS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6eq-cN-USA"/>
+                            <constraint firstItem="XQs-Re-khl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="218" id="AJJ-6Z-Pcd"/>
+                            <constraint firstItem="2Dx-DM-5yy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="DGl-57-WsF"/>
+                            <constraint firstItem="19W-Ud-RVS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="E3X-kc-USa"/>
+                            <constraint firstItem="XQs-Re-khl" firstAttribute="top" secondItem="2Dx-DM-5yy" secondAttribute="bottom" constant="207" id="X2p-ju-6jT"/>
+                            <constraint firstItem="XQs-Re-khl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rsA-el-aSt"/>
+                            <constraint firstItem="2Dx-DM-5yy" firstAttribute="width" secondItem="19W-Ud-RVS" secondAttribute="width" id="sIq-Ik-bzU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Dx-DM-5yy" secondAttribute="trailing" constant="20" id="shX-ZB-rcV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="shX-ZB-rcV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_default" width="256" height="256"/>
+        <image name="upanglogo" width="300" height="268"/>
+    </resources>
+</document>
